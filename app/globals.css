@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f6f7fb;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #3563ff;
+  box-shadow: 0 0 0 3px rgba(53, 99, 255, 0.15);
+}
+
+/* 打印 / 导出 PDF：白底、去除页面留白与滚动容器限制 */
+@media print {
+  html,
+  body {
+    background: #fff;
+  }
+  .container-page {
+    max-width: none;
+    padding: 0;
+  }
+}
+

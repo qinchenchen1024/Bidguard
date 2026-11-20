@@ -1,0 +1,17 @@
+{
+  "name": "BidGuard 标智核",
+  "short_name": "标智核",
+  "description": "招标/投标文件智能校验平台：完整性、条款合规、雷同检测与串标嫌疑识别",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f7fb",
+  "theme_color": "#1f43f5",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

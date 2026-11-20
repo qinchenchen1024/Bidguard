@@ -31,6 +31,7 @@ awk -v repl="${IMAGE_PREFIX}:${VERSION}" '
 
 # 2) 复制运行所需文件
 cp "$ROOT/.env.example" "$OUT_DIR/.env.example"
+cp "$ROOT/README.md" "$OUT_DIR/README.md"
 cp "$ROOT/RELEASE.md" "$OUT_DIR/RELEASE.md"
 cp "$ROOT/deploy/gen-keys.mjs" "$OUT_DIR/deploy/gen-keys.mjs"
 cp "$ROOT/deploy/nginx.conf" "$OUT_DIR/deploy/nginx.conf"
